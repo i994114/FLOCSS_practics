@@ -7285,7 +7285,7 @@ img {
   width: 100%;
   vertical-align: bottom; }
 
-.header {
+.l-header {
   box-sizing: border-box;
   width: 100%;
   height: 80px;
@@ -7300,21 +7300,21 @@ img {
   position: fixed;
   transition: .3s;
   z-index: 2; }
-  .header.float-active {
+  .l-header.float-active {
     transition: .3s;
     background: rgba(255, 255, 255, 0.9); }
   @media (max-width: 575.98px) {
-    .header {
+    .l-header {
       height: 60px;
       padding-right: 15px;
       padding-left: 15px; } }
-  .header .title {
+  .l-header .c-title {
     font-size: 30px;
     font-family: "Amatic SC", cursive;
     font-weight: bold; }
 
 @media (max-width: 575.98px) {
-  .nav-menu {
+  .p-nav__menu {
     display: block;
     position: absolute;
     top: 0;
@@ -7324,33 +7324,33 @@ img {
     height: 100vh;
     padding-top: 50px;
     transition: .5s; }
-    .nav-menu.active {
+    .p-nav__menu.active {
       transition: .5s;
       transform: translateX(-100%);
       z-index: 2; } }
 
-.menu {
+.p-menu {
   display: flex;
   align-items: center;
   font-size: 24px;
   font-family: "Amatic SC", cursive; }
-  .menu-item {
+  .p-menu__item {
     margin-right: 20px; }
-  .menu-link {
+  .p-menu--link {
     -webkit-font-smoothing: initial; }
   @media (max-width: 575.98px) {
-    .menu {
+    .p-menu {
       display: block;
       font-size: 30px; }
-      .menu-item {
+      .p-menu__item {
         margin-right: initial; }
-      .menu-link {
+      .p-menu--link {
         -webkit-font-smoothing: initial;
         display: block;
         padding: 15px;
         text-align: center; } }
 
-.menu-trigger {
+.p-menu--trigger {
   display: none;
   transition: all .4s;
   box-sizing: border-box;
@@ -7359,9 +7359,9 @@ img {
   height: 32px;
   z-index: 3; }
   @media (max-width: 575.98px) {
-    .menu-trigger {
+    .p-menu--trigger {
       display: inline-block; } }
-  .menu-trigger span {
+  .p-menu--trigger--span {
     display: inline-block;
     transition: all .4s;
     box-sizing: border-box;
@@ -7371,17 +7371,17 @@ img {
     height: 4px;
     background-color: #666;
     border-radius: 4px; }
-    .menu-trigger span:nth-of-type(1) {
+    .p-menu--trigger--span:nth-of-type(1) {
       top: 0; }
-    .menu-trigger span:nth-of-type(2) {
+    .p-menu--trigger--span:nth-of-type(2) {
       top: 14px; }
-    .menu-trigger span:nth-of-type(3) {
+    .p-menu--trigger--span:nth-of-type(3) {
       bottom: 0; }
-  .menu-trigger.active span:nth-of-type(1) {
+  .p-menu--trigger.active span:nth-of-type(1) {
     transform: translateY(12px) rotate(-45deg); }
-  .menu-trigger.active span:nth-of-type(2) {
+  .p-menu--trigger.active span:nth-of-type(2) {
     opacity: 0; }
-  .menu-trigger.active span:nth-of-type(3) {
+  .p-menu--trigger.active span:nth-of-type(3) {
     transform: translateY(-15px) rotate(45deg); }
 
 .hero {

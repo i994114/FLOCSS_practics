@@ -54,47 +54,14 @@ $font-family_corp: 'Amatic SC', cursive;
 
 //独自のscssを読み込み(変数定義後に宣言する　)
 @import '../scss/foundation/base.scss';
+@import '../scss/layout/header.scss';
 
-// ==================================
-// header
-// ==================================
-.header {
-  box-sizing: border-box;
-  width: 100%;
-  height: 80px;
-  color: $font-color_default;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: $space_xl;
-  padding-right: $space_xl;
-  left: 0;
-  top: 0;
-  position: fixed;
-  transition: .3s;
-  z-index: 2;
-  &.float-active {
-    transition: .3s;
-    background: rgba(255, 255, 255, 0.9);
-  }
-  @include media-breakpoint-down(xs){
-    height: 60px;
-    padding-right: $space_l;
-    padding-left: $space_l;
-  }
-  .title {
-    font-size: $font-size_xxl;
-    font-family: $font-family_corp;
-    font-weight: bold;
-  }
-
-}
 
 // ==================================
 // menu
 // ==================================
 @include media-breakpoint-down(xs) { // TODO:リファクタ必要（PCで修正が入る際も考えてincludeはクラスの中に書く）
-  .nav-menu {
+  .p-nav__menu {
     display: block;
     position: absolute;
     top: 0;
@@ -112,24 +79,24 @@ $font-family_corp: 'Amatic SC', cursive;
   }
 }
 
-.menu {
+.p-menu {
   display: flex;
   align-items: center;
   font-size: $font-size_xl;
   font-family: $font-family_corp;
-  &-item {
+  &__item {
     margin-right: $space_xl;
   }
-  &-link {
+  &--link {
     -webkit-font-smoothing: initial;
   }
   @include media-breakpoint-down(xs) {
     display: block;
     font-size: $font-size_xxl;
-    &-item {
+    &__item {
       margin-right: initial;
     }
-    &-link {
+    &--link {
       -webkit-font-smoothing: initial;
       display: block;
       padding: $space_l;
@@ -139,7 +106,7 @@ $font-family_corp: 'Amatic SC', cursive;
 }
 
 // https://www.nxworld.net/tips/12-css-hamburger-menu-active-effect.html
-.menu-trigger {
+.p-menu--trigger {
   display: none;
   @include media-breakpoint-down(xs) {
     display: inline-block;
@@ -150,7 +117,7 @@ $font-family_corp: 'Amatic SC', cursive;
   width: 40px;
   height: 32px;
   z-index: 3;
-  span {
+  &--span {
     display: inline-block;
     transition: all .4s;
     box-sizing: border-box;
