@@ -7285,7 +7285,7 @@ img {
   width: 100%;
   vertical-align: bottom; }
 
-.l-header {
+.p-header {
   box-sizing: border-box;
   width: 100%;
   height: 80px;
@@ -7300,57 +7300,20 @@ img {
   position: fixed;
   transition: .3s;
   z-index: 2; }
-  .l-header.float-active {
+  .p-header.float-active {
     transition: .3s;
     background: rgba(255, 255, 255, 0.9); }
   @media (max-width: 575.98px) {
-    .l-header {
+    .p-header {
       height: 60px;
       padding-right: 15px;
       padding-left: 15px; } }
-  .l-header .c-title {
+  .p-header__title {
     font-size: 30px;
     font-family: "Amatic SC", cursive;
     font-weight: bold; }
 
-@media (max-width: 575.98px) {
-  .p-nav__menu {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: -100%;
-    background: rgba(255, 255, 255, 0.85);
-    width: 100%;
-    height: 100vh;
-    padding-top: 50px;
-    transition: .5s; }
-    .p-nav__menu.active {
-      transition: .5s;
-      transform: translateX(-100%);
-      z-index: 2; } }
-
-.p-menu {
-  display: flex;
-  align-items: center;
-  font-size: 24px;
-  font-family: "Amatic SC", cursive; }
-  .p-menu__item {
-    margin-right: 20px; }
-  .p-menu--link {
-    -webkit-font-smoothing: initial; }
-  @media (max-width: 575.98px) {
-    .p-menu {
-      display: block;
-      font-size: 30px; }
-      .p-menu__item {
-        margin-right: initial; }
-      .p-menu--link {
-        -webkit-font-smoothing: initial;
-        display: block;
-        padding: 15px;
-        text-align: center; } }
-
-.p-menu--trigger {
+.p-header__menuTrigger {
   display: none;
   transition: all .4s;
   box-sizing: border-box;
@@ -7359,9 +7322,9 @@ img {
   height: 32px;
   z-index: 3; }
   @media (max-width: 575.98px) {
-    .p-menu--trigger {
+    .p-header__menuTrigger {
       display: inline-block; } }
-  .p-menu--trigger--span {
+  .p-header__menuTrigger--span {
     display: inline-block;
     transition: all .4s;
     box-sizing: border-box;
@@ -7371,20 +7334,57 @@ img {
     height: 4px;
     background-color: #666;
     border-radius: 4px; }
-    .p-menu--trigger--span:nth-of-type(1) {
+    .p-header__menuTrigger--span:nth-of-type(1) {
       top: 0; }
-    .p-menu--trigger--span:nth-of-type(2) {
+    .p-header__menuTrigger--span:nth-of-type(2) {
       top: 14px; }
-    .p-menu--trigger--span:nth-of-type(3) {
+    .p-header__menuTrigger--span:nth-of-type(3) {
       bottom: 0; }
-  .p-menu--trigger.active span:nth-of-type(1) {
+  .p-header__menuTrigger.active span:nth-of-type(1) {
     transform: translateY(12px) rotate(-45deg); }
-  .p-menu--trigger.active span:nth-of-type(2) {
+  .p-header__menuTrigger.active span:nth-of-type(2) {
     opacity: 0; }
-  .p-menu--trigger.active span:nth-of-type(3) {
+  .p-header__menuTrigger.active span:nth-of-type(3) {
     transform: translateY(-15px) rotate(45deg); }
 
-.hero {
+@media (max-width: 575.98px) {
+  .p-header__navMenu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    background: rgba(255, 255, 255, 0.85);
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    transition: .5s; }
+    .p-header__navMenu.active {
+      transition: .5s;
+      transform: translateX(-100%);
+      z-index: 2; } }
+
+.p-header__menu {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-family: "Amatic SC", cursive; }
+  .p-header__menu--item {
+    margin-right: 20px; }
+  .p-header__menu--link {
+    -webkit-font-smoothing: initial; }
+  @media (max-width: 575.98px) {
+    .p-header__menu {
+      display: block;
+      font-size: 30px; }
+      .p-header__menu--item {
+        margin-right: initial; }
+      .p-header__menu--link {
+        -webkit-font-smoothing: initial;
+        display: block;
+        padding: 15px;
+        text-align: center; } }
+
+.p-hero {
   background-image: url("../images/hero.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -7394,18 +7394,18 @@ img {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .hero-title {
+  .p-hero__title {
     font-size: 60px;
     font-family: "Amatic SC", cursive;
     color: #fff;
     text-shadow: 0 0 20px rgba(227, 123, 137, 0.4), 0 0 50px rgba(0, 0, 0, 0.8); }
     @media (max-width: 575.98px) {
-      .hero-title {
+      .p-hero__title {
         text-align: center; } }
-  .hero br {
+  .p-hero br {
     display: none; }
     @media (max-width: 575.98px) {
-      .hero br {
+      .p-hero br {
         display: block; } }
 
 .section-top {
