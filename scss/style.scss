@@ -16,7 +16,7 @@
 // 3.パッケージ管理ツールでダウンロードしたファイルを読み込む
 
 
-@import '../css/reset.css'; // cssを指定した場合は @import url(../css/reset.css); に変換されるだけなので注意
+@import '../scss/foundation/_reset.scss'; // cssを指定した場合は @import url(../css/reset.css); に変換されるだけなので注意
 @import '../node_modules/bootstrap/scss/bootstrap';
 // bootstrapを読み込んでから独自のCSSを読み込むこと
 
@@ -52,39 +52,8 @@ $space_3l: 40px;
 
 $font-family_corp: 'Amatic SC', cursive;
 
-
-// ==================================
-// base
-// ==================================
-html, body {
-  width: 100%;
-  color: $font-color_default;
-  font-size: $font-size_default;
-  line-height: 1.6;
-  font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; // TODO:リファクタ必要（変数にする）
-  text-size-adjust: 100%;
-  letter-spacing: 0.1em;
-}
-
-p, a {
-  -webkit-font-smoothing: antialiased;
-}
-
-a {
-  color: $font-color_default;
-  text-decoration: none;
-  transition: .3s;
-}
-
-a:hover {
-  color: $color_corp;
-  transition: .3s;
-}
-
-img {
-  width: 100%;
-  vertical-align: bottom;
-}
+//独自のscssを読み込み(変数定義後に宣言する　)
+@import '../scss/foundation/base.scss';
 
 // ==================================
 // header
