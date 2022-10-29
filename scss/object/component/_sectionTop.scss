@@ -1,0 +1,19 @@
+// ==================================
+// section-top
+// ==================================
+.c-sectionTop {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.c-sectionTop__title {
+  font-family: $font-family_corp;
+  text-align: center;
+  font-size: $font-size_3l;
+  margin-bottom: $space_3l;
+  @include media-breakpoint-down(xs) {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

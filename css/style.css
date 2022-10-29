@@ -7408,6 +7408,21 @@ img {
       .p-hero br {
         display: block; } }
 
+.c-sectionTop {
+  padding-top: 80px;
+  padding-bottom: 120px; }
+
+.c-sectionTop__title {
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 40px; }
+  @media (max-width: 575.98px) {
+    .c-sectionTop__title {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto; } }
+
 .section-top {
   padding-top: 80px;
   padding-bottom: 120px; }
