@@ -57,8 +57,10 @@ $font-family_corp: 'Amatic SC', cursive;
 @import '../scss/layout/header.scss';
 @import '../scss/object/project/header.scss';
 @import '../scss/object/project/hero.scss';
+@import '../scss/object/project/bgColor.scss';
 @import '../scss/object/component/sectionTop.scss';
-
+@import '../scss/object/utility/font.scss';
+@import '../scss/object/utility/margin.scss';
 
 
 
@@ -145,23 +147,3 @@ $font-family_corp: 'Amatic SC', cursive;
   }
 }
 
-// ==================================
-// Utility
-// ==================================
-.bgColor-lightGray { // TODO:リファクタ必要（色が後から修正が入り、赤色になったら？）
-  background: #f8f7fc;
-  box-shadow: 0px 0px 8px 2px #ddd inset;
-}
-
-.mb-xxl {
-  margin-bottom: $space_xxl;
-}
-
-.ft-corp {
-  font-weight: bold;
-  font-family: $font-family_corp;
-}
-
-.ft-l {
-  font-size: $font-size_xl;
-}
