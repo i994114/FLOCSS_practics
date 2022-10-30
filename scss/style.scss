@@ -61,56 +61,10 @@ $font-family_corp: 'Amatic SC', cursive;
 @import '../scss/object/component/sectionTop.scss';
 @import '../scss/object/utility/font.scss';
 @import '../scss/object/utility/margin.scss';
+@import '../scss/object/component/ornament.scss';
 
 
 
-
-
-
-.section-top {
-  padding-top: 80px;
-  padding-bottom: 120px;
-  &-title {
-    font-family: $font-family_corp;
-    text-align: center;
-    font-size: $font-size_3l;
-    margin-bottom: $space_3l;
-    @include media-breakpoint-down(xs) {
-      width: 70%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-  &-ornament {
-    .section-top-title {
-      span { // TODO: リファクタ必要（span以外を使うことも考えてclass名で指定すること）
-        display: inline-block;
-        background: #fff;
-        padding: 0 10px;
-        position: relative;
-        z-index: 1;
-      }
-      &:before, &:after {
-        border-top: 1px solid #2e1f1a;
-        content: "";
-        display: block;
-        position: relative;
-        z-index: 0;
-      }
-      &:before {
-        top: 28px;
-      }
-      &:after {
-        top: -28px;
-      }
-      &-lightGray {
-        span {
-          background: #f8f7fc;
-        }
-      }
-    }
-  }
-}
 
 
 // ==================================
