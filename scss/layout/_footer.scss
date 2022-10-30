@@ -1,0 +1,14 @@
+// ==================================
+// footer
+// ==================================
+.footer {
+  background: #555;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  @include media-breakpoint-down(xs) {
+    font-size: $font-size_s;
+  }
+}

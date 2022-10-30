@@ -62,19 +62,6 @@ $font-family_corp: 'Amatic SC', cursive;
 @import '../scss/object/utility/font.scss';
 @import '../scss/object/utility/margin.scss';
 @import '../scss/object/component/ornament.scss';
-
-// ==================================
-// footer
-// ==================================
-.footer {
-  background: #555;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80px;
-  @include media-breakpoint-down(xs) {
-    font-size: $font-size_s;
-  }
-}
+@import '../scss/object/component/panal.scss';
+@import '../scss/layout/footer.scss';
 
