@@ -7460,19 +7460,6 @@ img {
 .c-ornament__title-lightGray span {
   background: #f8f7fc; }
 
-.panel {
-  width: 100%;
-  position: relative;
-  transition: .5s;
-  margin-bottom: 15px; }
-  .panel-hover {
-    display: inline-block;
-    transition: .5s; }
-    .panel-hover:hover {
-      transform: scale(1.03);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      transition: .5s; }
-
 .footer {
   background: #555;
   color: #fff;
